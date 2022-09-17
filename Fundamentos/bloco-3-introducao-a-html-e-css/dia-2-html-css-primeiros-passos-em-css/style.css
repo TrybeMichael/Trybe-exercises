@@ -1,0 +1,39 @@
+.body{
+
+    font-size: 17px;
+
+}
+
+h1{
+    width: 65px;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    
+    
+}
+li{
+
+    background-color: blue;
+
+}
+
+#paragraph-list{
+    background-color: royalblue;
+}
+p{
+    font-weight: 600;
+    line-height: normal;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#red{
+    background-color: red;
+}
+
+#brown{
+    background-color: brown;
+}
