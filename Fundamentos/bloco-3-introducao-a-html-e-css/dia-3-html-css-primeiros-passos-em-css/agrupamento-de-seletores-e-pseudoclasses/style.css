@@ -1,0 +1,15 @@
+h1, p, li, a{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    
+}
+li:hover{
+    background-color: blueviolet;    
+} 
+a:focus{
+    font-family:Impact;
+}
+a{
+    text-decoration:  none;
+}
