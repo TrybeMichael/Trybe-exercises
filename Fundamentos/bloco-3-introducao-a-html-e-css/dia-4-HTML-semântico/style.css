@@ -86,4 +86,9 @@ p{
     border: solid black;
     text-align: center;
 }
-
+iframe{
+    float: right;
+}
+.refer{
+    text-justify:auto;
+}
