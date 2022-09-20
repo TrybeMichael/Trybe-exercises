@@ -1,0 +1,77 @@
+
+body{
+    padding: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-image: url(/75b2d8a9-1000.jpg);
+    height: 800px;
+    display: block;
+    
+
+}
+h1{ 
+    color: #56fba0;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    margin: 27px 0 22px;
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+    padding-top: 150px;
+}
+
+h2{
+    padding: 20px;
+
+}
+
+a { 
+    color: aliceblue;
+    background-color: rgb(70, 189, 70);
+    border-radius: 4px;
+    padding: 30px 150px;
+    text-decoration: none;
+    border: 50px;
+    font-size: 20px;
+    margin-left: 50px;
+       
+}
+ul:nth-of-type(1) > li{
+    display:inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+    
+    text-align: left;
+    
+}
+
+table{
+    
+    border: solid black;
+    font-size: 30px;
+}
+tr, td{
+    border: solid black;
+}
+
+img{
+    float:right;
+    width: 400px;
+    height: 400px;
+    
+}
+p{
+    font-size: 20px;
+    z-index: 1;
+    margin-right: auto;
+    text-justify: auto ;
+   
+}
+div{
+    background-image: url(/wp9980129.webp);
+}
