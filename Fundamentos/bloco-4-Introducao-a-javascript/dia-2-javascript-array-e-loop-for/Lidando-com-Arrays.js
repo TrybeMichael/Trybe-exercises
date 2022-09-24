@@ -68,7 +68,7 @@
   // for(let index = 0;index <= 25;index += 1){
   //   counter.push(index)
   // }
-  // console.log(counter);
+  // console.log(counter);  
 
 // Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2*
 
