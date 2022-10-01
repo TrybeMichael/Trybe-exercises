@@ -49,3 +49,18 @@ primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
 
 const terceiroFilho = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
 console.log(terceiroFilho);
+
+const fatherOfFather = document.getElementById('pai');
+  const Allchild = fatherOfFather.childNodes;
+  for(index = Allchild.length -1; index >=0; index--){
+    const currentSon = Allchild[index];
+    if(currentSon.id !== 'elementoOndeVoceEsta'){
+      currentSon.remove()
+    }
+  }
+  const firstChilfOfChild = document.getElementById('segundoEUltimoFilhoDoFilho')
+    segundoEUltimoFilhoDoFilho.remove();
+
+   const arya = document.getElementById('stark_childs').lastChild
+
+    console.log(arya);
