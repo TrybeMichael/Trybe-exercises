@@ -61,6 +61,4 @@ const fatherOfFather = document.getElementById('pai');
   const firstChilfOfChild = document.getElementById('segundoEUltimoFilhoDoFilho')
     segundoEUltimoFilhoDoFilho.remove();
 
-   const arya = document.getElementById('stark_childs').lastChild
-
-    console.log(arya);
+  
