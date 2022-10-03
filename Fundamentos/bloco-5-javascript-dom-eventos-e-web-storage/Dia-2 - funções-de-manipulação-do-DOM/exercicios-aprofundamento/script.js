@@ -3,6 +3,7 @@ function createH1() {
   const createTitle = document.createElement("h1");
   createTitle.innerText = "Exercício - JavaScript DOM";
   document.body.appendChild(createTitle);
+  createTitle.className = "title";
 }
 
 // Adicione a tag main com a classe main-content como filho da tag body;
@@ -48,26 +49,56 @@ function createTags() {
 
   const list = document.createElement("ul");
   rightSection.appendChild(list);
-  const arrayList = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-  for(let index in arrayList){
-  const listItem = document.createElement('li')
-  listItem.innerText = arrayList[index];
-  list.appendChild(listItem)
+  const arrayList = [
+    "um",
+    "dois",
+    "tres",
+    "quatro",
+    "cinco",
+    "seis",
+    "sete",
+    "oito",
+    "nove",
+    "dez",
+  ];
+  for (let index in arrayList) {
+    const listItem = document.createElement("li");
+    listItem.innerText = arrayList[index];
+    list.appendChild(listItem);
   }
 
   // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
   for (let index = 1; index <= 3; index += 1) {
-    const subTitle = document.createElement('h3');
-    subTitle.innerHTML = 'Show ' + index;
+    const subTitle = document.createElement("h3");
+    subTitle.innerHTML = "Show " + index;
     createTagMain.appendChild(subTitle);
+    subTitle.className = "description";
   }
 
+  // Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
 
-  
-  
+  createTagMain.removeChild(leftSection);
+
+  // Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
+
+  document.getElementsByClassName("right-content");
+  rightSection.style.marginRight = "auto";
+
+  // Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+
+  const getParent = document.getElementsByClassName("center-content")[0];
+  getParent.parentNode.style.backgroundColor = "green";
+ 
 }
+
+  function removeListItem(){
+  const listItems = document.getElementsByTagName("ul")[0];
+  listItems.lastChild.remove()
+  listItems.lastChild.remove()
+  }
 
 //Chamando Funções
 createH1();
 createTags();
+removeListItem();
