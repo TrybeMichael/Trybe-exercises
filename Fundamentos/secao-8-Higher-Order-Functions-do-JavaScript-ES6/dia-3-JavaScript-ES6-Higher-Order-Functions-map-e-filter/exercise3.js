@@ -70,6 +70,9 @@ const expectedResult = [
   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
 
-const formatedBookNames = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`)
+function fantasyOrScienceFictionAuthors() {
+  return books.filter((book) => 
+  (book.genre === 'Fantasia' || book.genre === 'Ficção Científica'))
+}
 
-console.log(formatedBooks);
+console.log(fantasyOrScienceFictionAuthors());
